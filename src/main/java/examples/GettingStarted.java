@@ -107,24 +107,12 @@ public class GettingStarted {
 		
 		
 		try (IReadingArchive ra = new ReadingArchive(new File(eventsDir, userZip))) {
-<<<<<<< HEAD
+
 			while (ra.hasNext() /*&& (numProcessedEvents++ < 500)*/) {
 				IDEEvent e = ra.getNext(IDEEvent.class);
 
 				processEvent(e,userZip);
-=======
-			// ... and iterate over content.
-			// the iteration will stop after 200 events to speed things up, remove this
-			// guard to process all events.
-			while (ra.hasNext() && (numProcessedEvents++ < 200)) {
-				/*
-				 * within the userZip, each stored event is contained as a single file that
-				 * contains the Json representation of a subclass of IDEEvent.
-				 */
-				IDEEvent e = ra.getNext(IDEEvent.class);
 
-				processEvent(e);
->>>>>>> 7bbafadbddb2b221eeafce3af75a4e9cf40c3e5e
 			}
 		}
 		

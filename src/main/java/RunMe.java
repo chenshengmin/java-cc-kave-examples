@@ -15,16 +15,13 @@
  * the License.
  */
 
-<<<<<<< HEAD
+
 import examples.CompareFileDirectory;
 import examples.GettingStarted;
 import examples.GettingStartedContexts;
 import examples.HandleFile;
 import examples.Interval;
-=======
-import examples.CountEventTypeExample;
-import examples.rsse.calls.BMNMining;
->>>>>>> 7bbafadbddb2b221eeafce3af75a4e9cf40c3e5e
+
 
 public class RunMe {
 
@@ -43,19 +40,10 @@ public class RunMe {
 
 	public static void main(String[] args) {
 
-<<<<<<< HEAD
+
 		//new GettingStarted(eventsDir).run();
 		//new GettingStartedContexts(contextsDir).run();
 		new HandleFile().getPassRateWithQuickFixes();
-=======
-		// BASIC DATA READING
-		
-		// new GettingStarted(eventsDir).run();
-		new CountEventTypeExample(eventsDir).run();
-		// new GettingStartedContexts(contextsDir).run();
-		
-		// RSSE RELATED EXAMPLES
-		new BMNMining().run();
->>>>>>> 7bbafadbddb2b221eeafce3af75a4e9cf40c3e5e
+
 	}
 };
